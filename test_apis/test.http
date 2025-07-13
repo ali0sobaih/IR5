@@ -1,0 +1,8 @@
+POST http://127.0.0.1:8000/api/searchScreen
+Content-Type: application/json
+
+{
+  "query": "how to make my car faster?",
+  "dataset": "antique",
+  "search_type": "tfidf"
+} 

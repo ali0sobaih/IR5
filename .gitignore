@@ -1,0 +1,11 @@
+.venv
+data
+emb
+faiss_store
+offline_data
+offline_data.joblib
+*.joblib
+
+*.faiss
+client
+*.db
