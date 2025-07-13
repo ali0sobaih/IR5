@@ -1,8 +1,54 @@
+#
 POST http://127.0.0.1:8000/api/searchScreen
 Content-Type: application/json
 
 {
   "query": "how to make my car faster?",
-  "dataset": "antique",
-  "search_type": "tfidf"
+  "dataset": "quora",
+  "search_type": "bert"
 } 
+###
+
+
+#
+POST http://127.0.0.1:8000/api/search/tfidf
+Content-Type: application/json
+
+{
+  "query": "how to make my car faster?",
+  "dataset": "quora"
+}
+###
+
+
+#
+POST http://127.0.0.1:8000/api/search/bm25
+Content-Type: application/json
+
+{
+  "query": "how to make my car faster?",
+  "dataset": "quora"
+}
+###
+
+
+#
+POST http://127.0.0.1:8000/api/search/bert
+Content-Type: application/json
+
+{
+  "query": "how to make my car faster?",
+  "dataset": "quora"
+}
+###
+
+
+#
+POST http://127.0.0.1:8000/api/search/hybrid
+Content-Type: application/json
+
+{
+  "query": "how to make my car faster?",
+  "dataset": "quora"
+}
+###
